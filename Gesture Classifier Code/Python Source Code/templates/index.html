@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Particle Gesture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body class="col-lg-6 offset-lg-3 " >
+    <form method="post" style="padding-top: 20%">
+        <div class="row justify-content-center gap-3">
+        <h1>A3: ML Gesture Recognition</h1>
+        select a gesture to train:
+        <select name="symbol" class="form-select">
+            <option selected value="Letter A">Letter A</option>
+            <option value="Letter B">Letter B</option>
+            <option value="Letter C">Letter C</option>
+            <option value="Letter D">Letter D</option>
+            <option value="Bonus">Bonus</option>
+        </select>
+        <div class="row justify-content-center ">
+            <input type="submit" name="submit" value="Train"><br>
+            <input type="submit" name="submit" value="Test"><br>
+            <input type="submit" name="submit" value="Reset">
+        </div>
+    </div>
+    </form>
+    {% if trials %}
+    <div>
+        Training Data: {{trials}}
+    </div>
+    {% endif %}
+    {% if pred %}
+    <h1>Prediction: {{pred}}</h1>
+    {% endif %}
+</body>
+</html>
