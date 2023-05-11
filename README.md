@@ -55,6 +55,9 @@ To install the required library, open a terminal and run the following command:
 ```bash 
 pip install numpy scipy scikit-learn matplotlib 
 ```
+To include the required libraries on the Particle code, go to your Particle Web IDE and include the following libraries in your file:
+* `SparkFunMMA8452Q (1.0.1)`   
+* `Grove_ChainableLED (1.0.2)`
 
 ### Setting up Classification Harness Code 
 To install all the dependencies in order to use the gesture classifier, make sure you are in the right folder and run:
