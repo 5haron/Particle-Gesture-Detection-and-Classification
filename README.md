@@ -99,7 +99,8 @@ python3 particle_server.py
 ## Repository Structure
 
 ### Directory
-
+* ```Gesture Classifier Code``` - contains the code for the gesture classifier
+* ```Gesture Detector Code``` - contains the code for the gesture detector
 
 ### License
 [MIT](https://choosealicense.com/licenses/mit/)
